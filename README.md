@@ -56,3 +56,27 @@ horários específicos.
 O parâmetro CELERY_ALWAYS_EAGER permite executar tarefas localmente, de modo síncrono, em vez de
 enviá-las para a fila. Isso será conveniente para executar testes de unidade, ou para executar
 a aplicação em nosso ambiente local sem executar o Celery.
+
+### Adicionando tarefas assíncronas em nossa aplicação
+
+**IMPORTANTE:**
+
+Utilize tarefas assíncronas não só para processos que consomem tempo, mas também para outros processos
+que não demorem tanto para serem executados, porém estão sujeitos a falhas de conexão ou exigem
+uma política de novas tentativas.
+
+### Comando para instalar RabbitMQ com Docker
+
+```
+docker run -d --hostname rabbit-host --name loja-online-django -p 15672:15672 -p 5672:5672 rabbitmq:management
+```
+
+### Comando para iniciar celery
+
+```
+celery -A myshop worker -l info
+```
+
+**IMPORTANTE:**
+
+Executar comando dentro do diretório myshop
