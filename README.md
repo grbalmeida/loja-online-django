@@ -19,3 +19,20 @@ o modelo Session da aplicação django.contrib.sessions.
 Para que haja um melhor desempenho, utilize uma engine de sessão baseada em cache.
 Django aceita prontamente o Memcached; além disso, é possível encontrar backends de cache
 de terceiros para o Redis e para outros sistemas de cache.
+
+# Processadores de contexto
+
+Um processador de contexto é uma função Python que recebe o objeto request como argumento
+e devolve um dicionário que será adicionado no contexto da requisição. Os processadores
+de contexto são convenientes quando queremos disponibilizar algo de modo global a todos os templates.
+
+- django.template.context_processors.debug: define a variável booleana debug e a variável sql_queries.
+- django.template.context_processors.request: define a variável request no contexto.
+- django.contrib.auth.context_processors.auth: define a variável user na requisição.
+- django.contrib.messages.context_processors.messages: define a variável messages no contexto.
+
+**IMPORTANTE:**
+
+Os processadores de contexto são executados em todas as requisições que utilizem RequestContext.
+Você poderia criar uma tag de template personalizada em vez de um processador de contexto caso a
+sua funcionalidade não fosse necessária em todos os templates, sobretudo se ela envolvesse consultas no banco de dados.
