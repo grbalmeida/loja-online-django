@@ -80,3 +80,41 @@ celery -A myshop worker -l info
 **IMPORTANTE:**
 
 Executar comando dentro do diretório myshop
+
+### Monitorando o Celery
+
+Você pode monitorar as tarefas assíncronas que são executadas. O Flower é uma ferramenta
+web para monitorar o Celery. É possível instalá-lo com este comando:
+
+```
+pip install flower==0.9.3
+```
+
+Assim que estiver instalado, você poderá iniciar o Flower executando o comando a seguir
+no diretório de seu projeto:
+
+```
+celery -A myshop flower
+```
+
+Acesse [http://localhost:5555/dashboard](http://localhost:5555/dashboard) em seu navegador. Você verá os workers ativos
+do Celery e as estatísticas sobre as tarefas assíncronas.
+
+**IMPORTANTE:**
+
+Se houver algum erro usando o sistema operacional Windows, verificar o link abaixo:
+[https://stackoverflow.com/questions/62975722/error-executing-flower-with-celery-in-windows-10](https://stackoverflow.com/questions/62975722/error-executing-flower-with-celery-in-windows-10)
+
+
+**IMPORTANTE:**
+
+Rodar worker e flower em abas separadas do terminal. Verificar o link abaixo:
+[https://stackoverflow.com/questions/34247062/celery-works-but-with-flower-doesnt-work](https://stackoverflow.com/questions/34247062/celery-works-but-with-flower-doesnt-work)
+
+```
+celery -A myshop worker -l info
+```
+
+```
+celery -A myshop flower -l info
+```

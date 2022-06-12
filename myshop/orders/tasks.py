@@ -1,3 +1,4 @@
+import os
 from celery import task
 from django.core.mail import send_mail
 from .models import Order
