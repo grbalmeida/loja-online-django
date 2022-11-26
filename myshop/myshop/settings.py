@@ -131,3 +131,22 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Configurações para o Braintree
+BRAINTREE_MERCHANT_ID = os.environ.get('BRAINTREE_MERCHANT_ID') # ID do comerciante
+BRAINTREE_PUBLIC_KEY = os.environ.get('BRAINTREE_PUBLIC_KEY')   # Chave pública
+BRAINTREE_PRIVATE_KEY = os.environ.get('BRAINTREE_PRIVATE_KEY') # Chave privada
+
+import braintree
+
+# Você deve usar Environment.Sandbox para integrar a sandbox. Assim que
+# seu site for lançado e você criar uma conta de verdade, será necessário
+# modificar esse dado para Environment.Production. O Braintree fornecerá
+# um novo ID de comerciante e chaves pública/privada para o ambiente de produção.
+
+BRAINTREE_CONF = braintree.Configuration(
+    braintree.Environment.Sandbox,
+    BRAINTREE_MERCHANT_ID,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)
