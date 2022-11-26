@@ -118,3 +118,20 @@ celery -A myshop worker -l info
 ```
 celery -A myshop flower -l info
 ```
+
+# Braintree
+
+### Integrando o Braintree com Hosted Fields
+
+A integração Hosted Fields permite criar nosso próprio formulário de pagamento
+usando estilos e layouts personalizados. Um iframe será adicionado dinamicamente
+na página por meio do uso do **SDK** (Software Development Kit, ou Kit de Desenvolvimento de Software)
+Javascript do Braintree. O iframe inclui o formulário de pagamento Hosted Fields. Quando o cliente
+submeter o formulário, o Hosted Fields obterá os detalhes do cartão de forma segura
+e tentará gerar um token. Se esse processo for bem-sucedido, você poderá enviar o
+token nonce gerado para a sua view a fim de criar uma transação utilizando o módulo
+Python braintree.
+
+Um token nonce é uma referência segura, utilizada uma única vez, para informações
+de pagamento. Ele permite enviar informações confidenciais de pagamento ao
+Braintree sem usar os dados brutos.
