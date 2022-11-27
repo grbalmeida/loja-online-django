@@ -16,7 +16,7 @@ def payment_process(request):
         nonce = request.POST.get('payment_method_nonce', None)
         # cria e submete a transação
         result = gateway.transaction.sale({
-            'amount': f'{total_cost}:.2f',
+            'amount': f'{total_cost:.2f}',
             'payment_method_nonce': nonce,
             'options': {
                 # Para que a transação seja automaticamente submetida para efetivação.

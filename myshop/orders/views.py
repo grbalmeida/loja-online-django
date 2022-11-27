@@ -24,7 +24,7 @@ def order_create(request):
                 cart.clear()
                 
                 # dispara uma tarefa assíncrona
-                order_created.delay(order.id)
+                #order_created.delay(order.id)
 
                 # define o pedido na sessão
                 request.session['order_id'] = order.id

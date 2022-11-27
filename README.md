@@ -135,3 +135,7 @@ Python braintree.
 Um token nonce é uma referência segura, utilizada uma única vez, para informações
 de pagamento. Ele permite enviar informações confidenciais de pagamento ao
 Braintree sem usar os dados brutos.
+
+### Lista de cartões de crédito para testes
+
+[https://developers.braintreepayments.com/guides/credit-cards/testing-go-live/python](https://developers.braintreepayments.com/guides/credit-cards/testing-go-live/python)
