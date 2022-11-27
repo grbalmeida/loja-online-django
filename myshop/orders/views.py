@@ -21,17 +21,17 @@ def order_create(request):
                                          price=item['price'],
                                          quantity=item['quantity'])
 
-                # limpa o carrinho
-                cart.clear()
-                
-                # dispara uma tarefa assíncrona
-                #order_created.delay(order.id)
+            # limpa o carrinho
+            cart.clear()
+            
+            # dispara uma tarefa assíncrona
+            #order_created.delay(order.id)
 
-                # define o pedido na sessão
-                request.session['order_id'] = order.id
+            # define o pedido na sessão
+            request.session['order_id'] = order.id
 
-                # redireciona para o pagamento
-                return redirect(reverse('payment:process'))
+            # redireciona para o pagamento
+            return redirect(reverse('payment:process'))
     else:
         form = OrderCreateForm()
 
