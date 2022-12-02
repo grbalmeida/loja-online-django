@@ -1,0 +1,14 @@
+version: '1'
+
+services:
+  myshop:
+    build: .
+    container_name: my-shop
+    ports:      
+      - "8095:80"
+    environment:
+      DATABASE_HOST: "host.docker.internal"
+      DATABASE_USER: "postgres"
+      DATABASE_PASSWORD: "default_123"
+      DATABASE_NAME: "LojaOnlineDjango"
+      BASE_URL: "http://localhost:8085"
