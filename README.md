@@ -139,3 +139,29 @@ Braintree sem usar os dados brutos.
 ### Lista de cartões de crédito para testes
 
 [https://developers.braintreepayments.com/guides/credit-cards/testing-go-live/python](https://developers.braintreepayments.com/guides/credit-cards/testing-go-live/python)
+
+# Internacionalização e Localização
+
+A internacionalização (geralmente abreviada como i18n) é o processo de adaptar um software
+para o possível uso de diferentes idiomas e localidades, de modo que ele não esteja vinculado
+a um idioma ou localidade específicos.
+
+A localização (abreviada como l10n) é o processo de realmente traduzir o software e adaptá-lo
+a uma localidade em particular. O próprio Django é traduzido para mais de 50 idiomas com o seu framework de internacionalização.
+
+### Comandos de gerenciamento de internacionalização
+
+* makemessages: executa na árvore de códigos-fontes para encontrar todas as strings
+marcadas para tradução e cria ou atualiza os arquivos de mensagens .po no diretório
+locale. Um arquivo .po será criado para cada idioma.
+
+* compilemessages: compila os arquivos de mensagens .po existentes, gerando arquivos .mo
+que serão usados para acessar as traduções.
+
+**IMPORTANTE:** No Windows, siga os passos que estão em
+[https://docs.djangoproject.com/en/3.0/topics/i18n/translation/#gettext-on-windows](https://docs.djangoproject.com/en/3.0/topics/i18n/translation/#gettext-on-windows) para baixar a biblioteca gettext.
+
+**IMPORTANTE:** A ordem das classes de middleware é muito importante porque
+cada middleware pode depender de um conjunto de dados de outro middleware executado antes.
+Os middlewares serão aplicados às requisições na ordem em que estiverem em MIDDLEWARE, e
+na ordem inversa para as respostas.

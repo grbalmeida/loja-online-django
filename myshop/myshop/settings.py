@@ -47,12 +47,18 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# Certifique-se de que LocaleMiddleware esteja depois de SessionMiddleware,
+# pois LocaleMiddleware precisa usar dados de sessão. Ele também deve ser
+# colocado antes de CommonMiddleware porque esse último exige um idioma
+# ativo para resolver o URL requisitado.
 
 ROOT_URLCONF = 'myshop.urls'
 
@@ -111,7 +117,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('es', 'Spanish'),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
+
+# Se você não definir um parâmetro LANGUAGES personalizado, o site estará
+# disponível em todos os idiomas para os quais Django é traduzido.
 
 TIME_ZONE = 'UTC'
 
