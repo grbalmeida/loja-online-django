@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-06 15:46-0300\n"
-"PO-Revision-Date: 2023-03-06 15:52+0000\n"
+"POT-Creation-Date: 2023-03-06 20:44-0300\n"
+"PO-Revision-Date: 2023-03-06 20:44+0000\n"
 "Last-Translator: b'  <gribeirodeal@dxc.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -43,6 +43,88 @@ msgstr "código postal"
 msgid "city"
 msgstr "ciudad"
 
+#: .\orders\templates\admin\orders\order\detail.html:6
+#: .\orders\templates\admin\orders\order\detail.html:18
+msgid "Order"
+msgstr "Pedido"
+
+#: .\orders\templates\admin\orders\order\detail.html:12
+msgid "Home"
+msgstr "Inicio"
+
+#: .\orders\templates\admin\orders\order\detail.html:15
+msgid "Orders"
+msgstr "Pedidos"
+
+#: .\orders\templates\admin\orders\order\detail.html:19
+msgid "Detail"
+msgstr "Detalle"
+
+#: .\orders\templates\admin\orders\order\detail.html:27
+msgid "Print order"
+msgstr "Orden de impresión"
+
+#: .\orders\templates\admin\orders\order\detail.html:32
+msgid "Created"
+msgstr "Creado"
+
+#: .\orders\templates\admin\orders\order\detail.html:36
+msgid "Customer"
+msgstr "Cliente"
+
+#: .\orders\templates\admin\orders\order\detail.html:40
+msgid "E-mail"
+msgstr "Correo electrónico"
+
+#: .\orders\templates\admin\orders\order\detail.html:46
+msgid "Address"
+msgstr "Dirección"
+
+#: .\orders\templates\admin\orders\order\detail.html:53
+msgid "Total amount"
+msgstr "Cantidad total"
+
+#: .\orders\templates\admin\orders\order\detail.html:57
+msgid "Status"
+msgstr "Estado"
+
+#: .\orders\templates\admin\orders\order\detail.html:58
+#: .\orders\templates\orders\order\pdf.html:48
+msgid "Paid"
+msgstr "Pagado"
+
+#: .\orders\templates\admin\orders\order\detail.html:58
+#: .\orders\templates\orders\order\pdf.html:48
+msgid "Pending payment"
+msgstr "Pago pendiente"
+
+#: .\orders\templates\admin\orders\order\detail.html:63
+#: .\orders\templates\orders\order\pdf.html:21
+msgid "Items bought"
+msgstr "Artículos comprados"
+
+#: .\orders\templates\admin\orders\order\detail.html:67
+#: .\orders\templates\orders\order\pdf.html:25
+msgid "Product"
+msgstr "Producto"
+
+#: .\orders\templates\admin\orders\order\detail.html:68
+#: .\orders\templates\orders\order\pdf.html:26
+msgid "Price"
+msgstr "Precio"
+
+#: .\orders\templates\admin\orders\order\detail.html:69
+#: .\orders\templates\orders\order\pdf.html:27
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: .\orders\templates\admin\orders\order\detail.html:70
+#: .\orders\templates\admin\orders\order\detail.html:83
+#: .\orders\templates\orders\order\create.html:31
+#: .\orders\templates\orders\order\pdf.html:41
+msgid "Total"
+msgstr "Total"
+
 #: .\orders\templates\orders\order\create.html:5
 #: .\orders\templates\orders\order\create.html:9
 msgid "Checkout"
@@ -62,13 +144,34 @@ msgstr ""
 "\n"
 "\"%(code)s\" (%(discount)s%% descuento)"
 
-#: .\orders\templates\orders\order\create.html:31
-msgid "Total"
-msgstr "Total"
-
 #: .\orders\templates\orders\order\create.html:38
 msgid "Place order"
 msgstr "Realizar compra"
+
+#: .\orders\templates\orders\order\created.html:6
+#: .\orders\templates\orders\order\created.html:10
+msgid "Thank you"
+msgstr "Gracias"
+
+#: .\orders\templates\orders\order\created.html:11
+msgid "Your order has been successfully completed. Your order numbers is"
+msgstr "Su orden ha sido completada satisfactoriamente. Su número de pedido es"
+
+#: .\orders\templates\orders\order\pdf.html:5
+msgid "My Shop"
+msgstr "Mi tienda"
+
+#: .\orders\templates\orders\order\pdf.html:7
+msgid "Invoice no."
+msgstr "Factura no."
+
+#: .\orders\templates\orders\order\pdf.html:13
+msgid "Bill to"
+msgstr "Cobrar a"
+
+#: .\orders\templates\orders\order\pdf.html:28
+msgid "Cost"
+msgstr "Costo"
 
 #: .\orders\urls.py:8
 msgid "create/"

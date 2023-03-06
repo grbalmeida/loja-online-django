@@ -1,16 +1,22 @@
 {% extends "admin/base_site.html" %}
 
+{% load i18n %}
+
 {% block title %}
-    Order {{ order.id }} {{ block.super }}
+    {% trans "Order" %} {{ order.id }} {{ block.super }}
 {% endblock %}
 
 {% block breadcrumbs %}
     <div class="breadcrumbs">
-        <a href="{% url "admin:index" %}">Home</a> &rsaquo;
-        <a href="{% url "admin:orders_order_changelist" %}">Orders</a>
+        <a href="{% url "admin:index" %}">
+            {% trans "Home" %}
+        </a> &rsaquo;
+        <a href="{% url "admin:orders_order_changelist" %}">
+            {% trans "Orders" %}
+        </a>
         &rsaquo;
-        <a href="{% url "admin:orders_order_change" order.id %}">Order {{ order.id }}</a>
-        &rsaquo; Detail
+        <a href="{% url "admin:orders_order_change" order.id %}">{% trans "Order" %} {{ order.id }}</a>
+        &rsaquo; {% trans "Detail" %}
     </div>
 {% endblock %}
 
@@ -18,50 +24,50 @@
     <h1>Order {{ order.id }}</h1>
     <ul class="object-tools">
         <li>
-            <a href="#" onclick="window.print();">Print order</a>
+            <a href="#" onclick="window.print();">{% trans "Print order" %}</a>
         </li>
     </ul>
     <table>
         <tr>
-            <th>Created</th>
+            <th>{% trans "Created" %}</th>
             <td>{{ order.created }}</td>
         </tr>
         <tr>
-            <th>Customer</th>
+            <th>{% trans "Customer" %}</th>
             <td>{{ order.first_name }} {{ order.last_name }}</td>
         </tr>
         <tr>
-            <th>E-mail</th>
+            <th>{% trans "E-mail" %}</th>
             <td>
                 <a href="mailto:{{ order.email }}">{{ order.email }}</a>
             </td>
         </tr>
         <tr>
-            <th>Address</th>
+            <th>{% trans "Address" %}</th>
             <td>
                 {{ order.address }}
                 {{ order.postal_code }} {{ order.city }}
             </td>
         </tr>
         <tr>
-            <th>Total amount</th>
+            <th>{% trans "Total amount" %}</th>
             <td>${{ order.get_total_cost }}</td>
         </tr>
         <tr>
-            <th>Status</th>
-            <td>{% if order.paid %}Paid{% else %}Pending payment{% endif %}</td>
+            <th>{% trans "Status" %}</th>
+            <td>{% if order.paid %}{% trans "Paid" %}{% else %}{% trans "Pending payment" %}{% endif %}</td>
         </tr>
     </table>
 
     <div class="module">
-        <h2>Items bought</h2>
+        <h2>{% trans "Items bought" %}</h2>
         <table style="width:100%">
             <thead>
                 <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
+                    <th>{% trans "Product" %}</th>
+                    <th>{% trans "Price" %}</th>
+                    <th>{% trans "Quantity" %}</th>
+                    <th>{% trans "Total" %}</th>
                 </tr>
             </thead>
             <tbody>
@@ -74,7 +80,7 @@
                     </tr>
                 {% endfor %}
                 <tr class="total">
-                    <td colspan="3">Total</td>
+                    <td colspan="3">{% trans "Total" %}</td>
                     <td class="num">${{ order.get_total_cost }}</td>
                 </tr>
             </tbody>

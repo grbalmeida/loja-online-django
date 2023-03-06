@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-06 15:46-0300\n"
+"POT-Creation-Date: 2023-03-06 20:44-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,88 @@ msgstr ""
 msgid "city"
 msgstr ""
 
+#: .\orders\templates\admin\orders\order\detail.html:6
+#: .\orders\templates\admin\orders\order\detail.html:18
+msgid "Order"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:12
+msgid "Home"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:15
+msgid "Orders"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:19
+msgid "Detail"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:27
+msgid "Print order"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:32
+msgid "Created"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:36
+msgid "Customer"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:40
+msgid "E-mail"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:46
+msgid "Address"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:53
+msgid "Total amount"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:57
+msgid "Status"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:58
+#: .\orders\templates\orders\order\pdf.html:48
+msgid "Paid"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:58
+#: .\orders\templates\orders\order\pdf.html:48
+msgid "Pending payment"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:63
+#: .\orders\templates\orders\order\pdf.html:21
+msgid "Items bought"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:67
+#: .\orders\templates\orders\order\pdf.html:25
+msgid "Product"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:68
+#: .\orders\templates\orders\order\pdf.html:26
+msgid "Price"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:69
+#: .\orders\templates\orders\order\pdf.html:27
+msgid "Quantity"
+msgstr ""
+
+#: .\orders\templates\admin\orders\order\detail.html:70
+#: .\orders\templates\admin\orders\order\detail.html:83
+#: .\orders\templates\orders\order\create.html:31
+#: .\orders\templates\orders\order\pdf.html:41
+msgid "Total"
+msgstr ""
+
 #: .\orders\templates\orders\order\create.html:5
 #: .\orders\templates\orders\order\create.html:9
 msgid "Checkout"
@@ -59,12 +141,33 @@ msgid ""
 "                    "
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:31
-msgid "Total"
-msgstr ""
-
 #: .\orders\templates\orders\order\create.html:38
 msgid "Place order"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:6
+#: .\orders\templates\orders\order\created.html:10
+msgid "Thank you"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:11
+msgid "Your order has been successfully completed. Your order numbers is"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:5
+msgid "My Shop"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:7
+msgid "Invoice no."
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:13
+msgid "Bill to"
+msgstr ""
+
+#: .\orders\templates\orders\order\pdf.html:28
+msgid "Cost"
 msgstr ""
 
 #: .\orders\urls.py:8
