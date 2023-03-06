@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-06 15:14-0300\n"
-"PO-Revision-Date: 2023-03-06 15:30+0000\n"
+"POT-Creation-Date: 2023-03-06 15:46-0300\n"
+"PO-Revision-Date: 2023-03-06 15:49+0000\n"
 "Last-Translator: b'  <gribeirodeal@dxc.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -27,13 +27,47 @@ msgstr "Cantidad"
 msgid "Coupon"
 msgstr "Cupón"
 
-#: .\myshop\settings.py:125
+#: .\myshop\settings.py:126
 msgid "English"
 msgstr "Inglés"
 
-#: .\myshop\settings.py:126
+#: .\myshop\settings.py:127
 msgid "Spanish"
 msgstr "Español"
+
+#: .\myshop\urls.py:24
+msgid "admin/"
+msgstr "admin/"
+
+#: .\myshop\urls.py:25
+msgid "cart/"
+msgstr "carro/"
+
+#: .\myshop\urls.py:26
+msgid "orders/"
+msgstr "pedidos/"
+
+#: .\myshop\urls.py:27
+msgid "payment/"
+msgstr "pago/"
+
+#: .\myshop\urls.py:28
+#, fuzzy
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "Cupón"
+
+#: .\payment\urls.py:8
+msgid "process/"
+msgstr "procesar/"
+
+#: .\payment\urls.py:9
+msgid "done/"
+msgstr "completado/"
+
+#: .\payment\urls.py:10
+msgid "canceled/"
+msgstr "cancelado/"
 
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:12
 msgid "My shop"
