@@ -160,6 +160,7 @@ que serão usados para acessar as traduções.
 
 **IMPORTANTE:** No Windows, siga os passos que estão em
 [https://docs.djangoproject.com/en/3.0/topics/i18n/translation/#gettext-on-windows](https://docs.djangoproject.com/en/3.0/topics/i18n/translation/#gettext-on-windows) para baixar a biblioteca gettext.
+Adicionar a pasta bin no path das variáveis de ambiente
 
 **IMPORTANTE:** A ordem das classes de middleware é muito importante porque
 cada middleware pode depender de um conjunto de dados de outro middleware executado antes.
