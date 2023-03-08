@@ -19,7 +19,7 @@ class Category(TranslatableModel):
     def get_absolute_url(self):
         return reverse('shop:product_list_by_category', args=[self.slug])
 
-class Product(models.Model):
+class Product(TranslatableModel):
     translations = TranslatedFields(
         name = models.CharField(max_length=200, db_index=True),
         slug = models.CharField(max_length=200, db_index=True),
