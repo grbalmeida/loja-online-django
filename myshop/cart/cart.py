@@ -83,6 +83,8 @@ class Cart(object):
     def clear(self):
         # remove o carrinho da sessão
         del self.session[settings.CART_SESSION_ID]
+        if self.session.get('coupon_id'):
+            del self.session['coupon_id']
         self.save()
         
     @property
