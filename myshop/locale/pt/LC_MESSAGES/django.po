@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-08 00:23-0300\n"
-"PO-Revision-Date: 2023-03-06 20:42+0000\n"
+"PO-Revision-Date: 2023-03-08 00:18+0000\n"
 "Last-Translator: b'  <gribeirodeal@dxc.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,39 +21,39 @@ msgstr ""
 
 #: .\cart\forms.py:10 .\cart\templates\cart\detail.html:16
 msgid "Quantity"
-msgstr "Cantidad"
+msgstr "Quantidade"
 
 #: .\cart\templates\cart\detail.html:6 .\cart\templates\cart\detail.html:10
 msgid "Your shopping cart"
-msgstr "Tu carro"
+msgstr "Seu carrinho"
 
 #: .\cart\templates\cart\detail.html:14
 msgid "Image"
-msgstr "Imagen"
+msgstr "Imagem"
 
 #: .\cart\templates\cart\detail.html:15
 msgid "Product"
-msgstr "Producto"
+msgstr "Produto"
 
 #: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:42
 msgid "Remove"
-msgstr "Eliminar"
+msgstr "Remover"
 
 #: .\cart\templates\cart\detail.html:18
 msgid "Unit price"
-msgstr "Precio unitario"
+msgstr "Preço unitário"
 
 #: .\cart\templates\cart\detail.html:19
 msgid "Price"
-msgstr "Precio"
+msgstr "Preço"
 
 #: .\cart\templates\cart\detail.html:36
 msgid "Update"
-msgstr "Actualizar"
+msgstr "Atualizar"
 
 #: .\cart\templates\cart\detail.html:54
 msgid "Subtotal"
-msgstr "Total parcial"
+msgstr "Subtotal"
 
 #: .\cart\templates\cart\detail.html:71
 msgid "Total"
@@ -61,7 +61,7 @@ msgstr "Total"
 
 #: .\cart\templates\cart\detail.html:78
 msgid "Apply a coupon"
-msgstr "Aplicar un cupón"
+msgstr "Aplicar cupom"
 
 #: .\cart\templates\cart\detail.html:81
 msgid "Apply"
@@ -69,35 +69,35 @@ msgstr "Aplicar"
 
 #: .\cart\templates\cart\detail.html:87
 msgid "Continue shopping"
-msgstr "Seguir comprando"
+msgstr "Continuar comprando"
 
 #: .\cart\templates\cart\detail.html:90
 msgid "Checkout"
-msgstr "Verificar"
+msgstr "Confira"
 
 #: .\coupons\forms.py:5
 msgid "Coupon"
-msgstr "Cupón"
+msgstr "Cupom"
 
 #: .\myshop\settings.py:127
 msgid "English"
-msgstr "Inglés"
+msgstr "Inglês"
 
 #: .\myshop\settings.py:128
 msgid "Spanish"
-msgstr "Español"
+msgstr "Espanhol"
 
 #: .\myshop\settings.py:129
 msgid "Português"
-msgstr ""
+msgstr "Português"
 
 #: .\myshop\urls.py:24
 msgid "admin/"
-msgstr "admin/"
+msgstr ""
 
 #: .\myshop\urls.py:25
 msgid "cart/"
-msgstr "carro/"
+msgstr "carrinho/"
 
 #: .\myshop\urls.py:26
 msgid "orders/"
@@ -105,60 +105,60 @@ msgstr "pedidos/"
 
 #: .\myshop\urls.py:27
 msgid "payment/"
-msgstr "pago/"
+msgstr "pagamento/"
 
 #: .\myshop\urls.py:28
 msgid "coupons/"
-msgstr "cupones/"
+msgstr "cupons/"
 
 #: .\payment\templates\payment\canceled.html:5
 msgid "Payment canceled"
-msgstr "Pago cancelado"
+msgstr "Pagamento cancelado"
 
 #: .\payment\templates\payment\canceled.html:8
 msgid "Your payment has not been processed"
-msgstr "Su pago no ha sido procesado"
+msgstr "Seu pagamento não foi processado"
 
 #: .\payment\templates\payment\canceled.html:9
 msgid "There was a problem processing your payment."
-msgstr "Hubo un problema al procesar su pago."
+msgstr "Ocorreu um problema ao processar seu pagamento."
 
 #: .\payment\templates\payment\done.html:5
 msgid "Payment successful"
-msgstr "Pago exitoso"
+msgstr "Pagamento bem sucedido"
 
 #: .\payment\templates\payment\done.html:8
 msgid "Your payment was successful"
-msgstr "Su pago fue exitoso"
+msgstr "Seu pagamento foi aprovado"
 
 #: .\payment\templates\payment\done.html:9
 msgid "Your payment has been processed successfully."
-msgstr "Su pago ha sido procesado con éxito."
+msgstr "Seu pagamento foi processado com sucesso."
 
 #: .\payment\templates\payment\process.html:5
 #: .\payment\templates\payment\process.html:8
 msgid "Pay by credit card"
-msgstr "Pagar con tarjeta de crédito"
+msgstr "Pagar com cartão de crédito"
 
 #: .\payment\templates\payment\process.html:10
 msgid "Card Number"
-msgstr "Número de tarjeta"
+msgstr "Número do cartão"
 
 #: .\payment\templates\payment\process.html:13
 msgid "CVV"
-msgstr "Código de verificación"
+msgstr "Código de verificação"
 
 #: .\payment\templates\payment\process.html:16
 msgid "Expiration Date"
-msgstr "Fecha de caducidad"
+msgstr "Data de validade"
 
 #: .\payment\urls.py:8
 msgid "process/"
-msgstr "procesar/"
+msgstr "processo/"
 
 #: .\payment\urls.py:9
 msgid "done/"
-msgstr "completado/"
+msgstr "feito/"
 
 #: .\payment\urls.py:10
 msgid "canceled/"
@@ -166,15 +166,15 @@ msgstr "cancelado/"
 
 #: .\shop\templates\shop\base.html:7 .\shop\templates\shop\base.html:12
 msgid "My shop"
-msgstr "Mi tienda"
+msgstr "Minha loja"
 
 #: .\shop\templates\shop\base.html:17
 msgid "Language"
-msgstr "Idioma"
+msgstr "Linguagem"
 
 #: .\shop\templates\shop\base.html:35
 msgid "Your cart"
-msgstr "Tu carro"
+msgstr "Seu carrinho"
 
 #: .\shop\templates\shop\base.html:37
 #, python-format
@@ -188,27 +188,27 @@ msgid_plural ""
 "                            "
 msgstr[0] ""
 "\n"
-"%(items)s producto, $%(total)s"
+"%(items)s item, $%(total)s"
 msgstr[1] ""
 "\n"
-"%(items)s productos, $%(total)s"
+"%(items)s itens, $%(total)s"
 
 #: .\shop\templates\shop\base.html:44
 msgid "Your cart is empty."
-msgstr "Tu carro está vacío."
+msgstr "Seu carrinho está vazio."
 
 #: .\shop\templates\shop\product\detail.html:22
 msgid "Add to cart"
-msgstr "Añadir al carro"
+msgstr "Adicionar ao carrinho"
 
 #: .\shop\templates\shop\product\list.html:11
 msgid "Categories"
-msgstr "Categorías"
+msgstr "Categorias"
 
 #: .\shop\templates\shop\product\list.html:14
 msgid "All"
-msgstr "Todo"
+msgstr "Todos"
 
 #: .\shop\templates\shop\product\list.html:25
 msgid "Products"
-msgstr "Productos"
+msgstr "Produtos"

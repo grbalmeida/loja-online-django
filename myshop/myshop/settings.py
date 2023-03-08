@@ -126,6 +126,7 @@ from django.utils.translation import gettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),
     ('es', _('Spanish')),
+    ('pt', _('Português')),
 )
 
 LOCALE_PATHS = (
@@ -139,6 +140,7 @@ PARLER_LANGUAGES = {
     None: (
         {'code': 'en'},
         {'code': 'es'},
+        {'code': 'pt'},
     ),
     'default': {
         'fallback': 'en',
