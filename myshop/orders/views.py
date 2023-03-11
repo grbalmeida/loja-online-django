@@ -9,6 +9,7 @@ from .models import OrderItem, Order
 from .forms import OrderCreateForm
 from .tasks import order_created
 from cart.cart import Cart
+from shop.recommender import Recommender
 
 def order_create(request):
     cart = Cart(request)
@@ -23,6 +24,10 @@ def order_create(request):
                 order.coupon = cart.coupon
                 order.discount = cart.coupon.discount
             order.save()
+            
+            products = [item['product'] for item in cart]
+            r = Recommender()
+            r.products_bought(products)
 
             for item in cart:
                 OrderItem.objects.create(order=order,
