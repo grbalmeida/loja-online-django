@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-08 00:23-0300\n"
-"PO-Revision-Date: 2023-03-08 00:18+0000\n"
+"POT-Creation-Date: 2023-03-11 00:03-0300\n"
+"PO-Revision-Date: 2023-03-11 00:04+0000\n"
 "Last-Translator: b'  <gribeirodeal@dxc.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -35,7 +35,7 @@ msgstr "Imagem"
 msgid "Product"
 msgstr "Produto"
 
-#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:42
+#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:43
 msgid "Remove"
 msgstr "Remover"
 
@@ -47,31 +47,31 @@ msgstr "Preço unitário"
 msgid "Price"
 msgstr "Preço"
 
-#: .\cart\templates\cart\detail.html:36
+#: .\cart\templates\cart\detail.html:37
 msgid "Update"
 msgstr "Atualizar"
 
-#: .\cart\templates\cart\detail.html:54
+#: .\cart\templates\cart\detail.html:56
 msgid "Subtotal"
 msgstr "Subtotal"
 
-#: .\cart\templates\cart\detail.html:71
+#: .\cart\templates\cart\detail.html:73
 msgid "Total"
 msgstr "Total"
 
-#: .\cart\templates\cart\detail.html:78
+#: .\cart\templates\cart\detail.html:80
 msgid "Apply a coupon"
 msgstr "Aplicar cupom"
 
-#: .\cart\templates\cart\detail.html:81
+#: .\cart\templates\cart\detail.html:83
 msgid "Apply"
 msgstr "Aplicar"
 
-#: .\cart\templates\cart\detail.html:87
+#: .\cart\templates\cart\detail.html:89
 msgid "Continue shopping"
 msgstr "Continuar comprando"
 
-#: .\cart\templates\cart\detail.html:90
+#: .\cart\templates\cart\detail.html:92
 msgid "Checkout"
 msgstr "Confira"
 
@@ -79,15 +79,15 @@ msgstr "Confira"
 msgid "Coupon"
 msgstr "Cupom"
 
-#: .\myshop\settings.py:127
+#: .\myshop\settings.py:128
 msgid "English"
 msgstr "Inglês"
 
-#: .\myshop\settings.py:128
+#: .\myshop\settings.py:129
 msgid "Spanish"
 msgstr "Espanhol"
 
-#: .\myshop\settings.py:129
+#: .\myshop\settings.py:130
 msgid "Português"
 msgstr "Português"
 
@@ -200,6 +200,10 @@ msgstr "Seu carrinho está vazio."
 #: .\shop\templates\shop\product\detail.html:22
 msgid "Add to cart"
 msgstr "Adicionar ao carrinho"
+
+#: .\shop\templates\shop\product\detail.html:29
+msgid "People who bought this also bought"
+msgstr "Pessoas que compraram isso também compraram"
 
 #: .\shop\templates\shop\product\list.html:11
 msgid "Categories"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-08 00:23-0300\n"
+"POT-Creation-Date: 2023-03-11 00:03-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Product"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:42
+#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:43
 msgid "Remove"
 msgstr ""
 
@@ -46,31 +46,31 @@ msgstr ""
 msgid "Price"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:36
+#: .\cart\templates\cart\detail.html:37
 msgid "Update"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:54
+#: .\cart\templates\cart\detail.html:56
 msgid "Subtotal"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:71
+#: .\cart\templates\cart\detail.html:73
 msgid "Total"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:78
+#: .\cart\templates\cart\detail.html:80
 msgid "Apply a coupon"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:81
+#: .\cart\templates\cart\detail.html:83
 msgid "Apply"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:87
+#: .\cart\templates\cart\detail.html:89
 msgid "Continue shopping"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:90
+#: .\cart\templates\cart\detail.html:92
 msgid "Checkout"
 msgstr ""
 
@@ -78,15 +78,15 @@ msgstr ""
 msgid "Coupon"
 msgstr ""
 
-#: .\myshop\settings.py:127
+#: .\myshop\settings.py:128
 msgid "English"
 msgstr ""
 
-#: .\myshop\settings.py:128
+#: .\myshop\settings.py:129
 msgid "Spanish"
 msgstr ""
 
-#: .\myshop\settings.py:129
+#: .\myshop\settings.py:130
 msgid "Português"
 msgstr ""
 
@@ -194,6 +194,10 @@ msgstr ""
 
 #: .\shop\templates\shop\product\detail.html:22
 msgid "Add to cart"
+msgstr ""
+
+#: .\shop\templates\shop\product\detail.html:29
+msgid "People who bought this also bought"
 msgstr ""
 
 #: .\shop\templates\shop\product\list.html:11
